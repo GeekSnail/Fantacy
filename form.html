@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>form</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="javascript/script.js"></script>
+
+</head>
+
+<body>
+	<div id="outer">
+    	<div id="logo">
+    		<a href="http://noelli.cn" target="_blank">Noelli's life</a>
+    	</div>
+     	<div id="nav1">  
+        	<a href="#" class="menu-ctrl">
+                <i class="icon-menu"></i>
+            </a>  
+            <ul id="top1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="article.html">Archive</a></li>
+              <li><a href="tags.html">Tags</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+        </div> 
+        <div id="login-area">
+            <ul class="header-unlogin clearfix">
+                <li class="header-signin">
+                    <a href="form.html" id="js-signin-btn">登录</a>
+                </li>
+                <li class="header-signup">
+                    <a href="form.html" id="js-signup-btn">注册</a>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div id="header">
+    	<div id="logo">
+    		<a href="http://noelli.cn" target="_blank">Noelli's life</a>
+    	</div>
+     	<div id="nav1">  
+        	<a href="#" class="menu-ctrl">
+                <i class="icon-menu"></i>
+            </a>  
+            <ul id="top1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="article.html">Archive</a></li>
+              <li><a href="tags.html">Tags</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div id="login-area">
+            <ul class="header-unlogin clearfix">
+                <li class="header-signin">
+                    <a href="form.html" id="js-signin-btn">登录</a>
+                </li>
+                <li class="header-signup">
+                    <a href="form.html" id="js-signup-btn">注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav"> 
+    	<img src="image/pcfs4banner.jpg" width="1440" height="517">
+        </div>
+        
+    <div id="container">   
+    <div id="item1" ><br>      
+<form id="User_registration" name="User_registration"action="" method="get">
+	<div class="box 1" >
+   		<label class="user_item">昵称</label>
+       		<input name="nickname" type="text" class="new_txt" id="nickname" maxlength="24" autocomplete="off"/>
+            <!--<div class="user_info" >
+			</div> -->
+	</div> 
+    <div class="box 2" >
+        <label class="user_item">密码</label>
+        <input name="password" class="new_txt" id="password" type="text" />
+         <!--<div class="user_info" >
+			</div>--> 
+	</div> 
+    <div class="box 3" >
+        <label class="user_item">确认密码</label>
+        <input name="confirm_pwd" class="new_txt" id="confirm_pwd" type="text" />
+         <!--<div class="user_info" >
+			</div> -->
+	</div> 
+    <div class="box 4" >
+        <label class="user_item">性别</label>
+          <label>
+            <input type="radio" name="RadioGroup1" value="男" id="sex" >男</label>
+          <label>
+            <input type="radio" name="RadioGroup1" value="女" id="sex">女</label>
+              
+    </div> 
+	<div class="box 5" >
+        <label class="user_item">生日</label>
+       <select name="year" id="birthday">
+         <option value="1996">1996年</option>
+         <option value="1997">1997年</option>
+         <option value="1998">1998年</option> 
+       </select>
+       <select name="month" id="birthday">
+         <option value="January">1月</option>
+         <option value="February">2月</option>
+         <option value="March">3月</option> 
+       </select>
+       <select name="day" id="birthday">
+         <option value="one">1日</option>
+         <option value="two">2日</option>
+         <option value="three">3日</option> 
+       </select>
+	</div>
+    <div class="box 6" >
+        <label class="user_item">所在地</label>
+       <select name="country" id="location">
+         <option value="china">中国</option>
+         <option value="america">美国</option>
+       </select>
+       <select name="province" id="location">
+         <option value="beijing">北京</option>
+         <option value="shanghai">上海</option>
+         <option value="zhejiang">浙江</option>
+         
+       </select>
+       <select name="city" id="location">
+		 <option value="dongcheng">东城区</option>
+         <option value="wenzhou">温州</option>
+         <option value="lishui">丽水</option>
+         
+       </select>
+	</div>
+    <div class="box 7" >
+        <label class="user_item">手机号码</label>
+        <input name="phone" type="text" class="new_txt" id="phone" />
+        <!--<div class="user_info" >
+		 </div> -->
+         <div class="box box_phone_tip"> 
+         	<label class="user_item" style="height:10px"></label>
+         	<div class="tip" > 
+            	<div style="font-size:14px;margin-bottom:5px">忘记密码时，可通过该手机号码快速找回密码
+                </div>
+            </div> 
+         </div>
+	</div> 
+    <div class="box 8" >
+    	<label class="user_item"></label>
+        <!--<div id="captcha_bg" class="bg_txt"> --> 	<input type="text" class="new_txt" id="captcha" name="captcha" /> 
+        <!--</div>-->
+        <div class="getcaptcha"> 
+          <div id="getcaptcha" title="获取短信验证码">	
+           <span id="timeLeft"></span>
+           <span id="verimaTip">获取短信验证码</span>
+          </div>
+        </div>
+	</div> 
+    <div class="box 9" >
+        <!--<p>-->
+        <label class="user_item"></label>
+          <label>
+            <input type="checkbox" name="qzone" value="同时开通QQ空间" class="qzone">
+            <span class="qzone">            同时开通QQ空间</span></label>
+          <br>
+          <label>
+            <input type="checkbox" name="agree" value="我已阅读并同意相关服务条款和隐私政策" class="agree">
+            <span class="agree">我已阅读并同意相关服务条款和隐私政策</span></label>
+          <br>
+        <!--</p>-->
+    </div> 
+    <div class="box 10" >
+      <label class="user_item"></label>
+    	<div class="submit"> 
+        	<input type="submit" value="提交注册" title="提交注册" tabindex="23" id="submit"> 
+        </div>
+        <!--<input name="submit" type="button" id="submit" class="new_txt" value="提交注册" >-->
+	</div>
+     <br>
+</form>
+		
+    <br>   
+	</div><!--"item1"-->    
+<br>
+</div>  
+<div align="center" id="footer">
+          <a href="http://www.youtube.com"><img src="image/yt.png" border="0" onMouseOver="this.src='image/yth.png'" onMouseOut="this.src='image/yt.png'" alt="youtube"/></a> 
+</div>
+ <!--id="container"-->
+</body>
+</html>
