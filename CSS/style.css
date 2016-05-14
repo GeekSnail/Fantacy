@@ -20,7 +20,7 @@ li {
 }
 #container, #main {
 	height: auto;
-	width: 70%;
+	width: 1200px;
 	margin-top: 0px;
 	margin-right: auto;
 	margin-bottom: 15px;
@@ -134,9 +134,11 @@ li {
 #nav1 ul li a:hover,
 #nav1 ul li a:active {
   /*color: #fff;*/
-  background-color: #787d82;
+  /*background-color: #787d82;*/
+  background-color: #787b00;
   /*border-top: 1px solid #ddd;*/
   /*border-bottom: 1px solid #ddd;*/
+  border: 1px solid #FFF;
 }
 
 #login-area {
@@ -195,7 +197,8 @@ li {
 
 #login-area ul li a:hover,
 #login-area ul li a:active {
-  background-color: #788d22;
+	background-color: #788d22;
+	border: 1px solid #FFF;
 }
 :link, :visited, ins {
     text-decoration: none; /*去掉链接的下划线*/
@@ -207,14 +210,13 @@ a, input, button {
 #nav {
 	/*background-image: url(../image/pcfs4banner.jpg);*/
 	height: 500px;
-	width: 100%;
+	width: 100% !important;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	/*border: 1px dashed #00F;*/
 	/*background-color: rgba(200,75,255,0.25);*/
 	margin-right: 0px;
 	margin-left: 0px;
-	
     background: no-repeat center center;
     background-attachment: scroll;
     -webkit-background-size: cover;
@@ -281,9 +283,10 @@ article .postone{
 	-webkit-box-flex: 1;
 	background-color: rgba(24,22,239,0.23);
 }
+
 #footer {
 	height: 180px;
-	width: 100%;
+	width: 100% !important;
     margin-top: 5px;
 	margin-right: auto;
 	margin-left: auto;
@@ -291,6 +294,7 @@ article .postone{
 	/*overflow:hidden;*/
 	/*text-align:center;*/
 	display:table;
+	position: relative;
 }
 #footer a{
 	display:table-cell;
@@ -370,8 +374,11 @@ header a{
 	line-height: 30px;
 	/*border: 1px dashed #00F;*/
 	}
+
 .jiathis_style{
 	height: 18px;
+	position:relative;
+	padding-left:70%;
 }
 .icon-menu{
 	background: #FFF;
@@ -458,7 +465,8 @@ header a{
     top: 60%; /*相对nav1的垂直位置*/
 	margin: 0%;
 	padding: 0%;
-    background-color: #222428;
+    background-color: #222919;
+	/*background-color: #222428;*/
   }
   #nav1 #top1 li {
     float: none;
@@ -469,10 +477,11 @@ header a{
     text-align: center;
   }
 #nav {
-	height: 300px;
+	height: 320px;
 }
   .user_item{
-	  max-width: 100px;
+	  /*max-width: 100px;*/
+	  width: 20%;
 	  }
 	#login-area {
 		width: 19%;
@@ -481,20 +490,23 @@ header a{
     width: 48px;
 	}  
 #container {
-	width: 100%;
+	width: 100% !important;
 }
+
 #container #content #banner ul li img {
 	max-height: 310px;
 }
 #container #content #banner ul {
-	margin-left: 2.5% !important;
+	margin-left: 2.3% !important;
 }
 #container #content #banner ul li {
-	margin-right: 2.5% !important;
+	margin-right: 2.3% !important;
 }
  .status-item .bd .content{
 	padding-left: 2px !important;
 	}
+.user_item {
+	 width: 20% !important;}
 }
 @media screen and (max-width:400px) {#right{font-size:16px;}
 #logo{
@@ -503,9 +515,6 @@ header a{
 #nav1{
 	width:20%;/*这个大小正好把字母包含进去*/
 }
-  .user_item{
-	  max-width: 65px;
-	  }
 #header,#outer {
 	padding-left:20px;
 }
@@ -513,6 +522,9 @@ header a{
 	width: 100%;
 }}
 @media screen and (max-width:640px) {#right{font-size:16px;}  
+#main{
+	width: 95% !important;
+}
 #logo{
 	margin-left:13%;
 } 
@@ -522,9 +534,9 @@ header a{
 #nav1 #top1 {
 	width: 100%;
 }
-.user_item{
+/*.user_item{
 	 max-width: 70px;
-	}
+	}*/
 #login-area {
 	margin-left:auto; /*为什么它会影响logo的位置变化*/
 }
@@ -597,7 +609,7 @@ header a{
 	height: 400px;
 }
 #container {
-	width: 80%;
+	width: 84%;
 }
  .status-item .bd .content{
 	padding-left: 27px !important;
@@ -606,7 +618,12 @@ header a{
 @media (min-width:1024px) and (max-width:1200px) {#right{font-size:14px;}
 /*#login-area {
 	min-width: 16%;
-}*/}
+}*/
+#container, #main {
+	height: auto;
+	width: 80%;
+	}
+}
 @media (min-width:1200px) and (max-width:1460px) {#right{font-size:16px;}}
 @media (min-width:1460px) and (max-width:1600px){#right{font-size:19px;}}
 @media (min-width:1600px) and (max-width:1800px){#right{font-size:21px;}}
@@ -615,13 +632,17 @@ header a{
 	/*margin-top: 0px;*/
 	height: auto;
 	width: auto;
-	/*border: 1px solid #00F;*/
+	/*border: 1px solid #903;*/
+	
 }
 
-
+#container #content #banner  {
+	/*border: 1px solid #00F;*/
+	display: inline-block; /*???*/
+}
 #container #content #banner ul {
 	padding: 0px;
-	/*border: 1px solid #00F;*/
+	/*border: 1px solid #96F;*/
 	margin-left: 1.8%;
 /*		display: box;
 	display: -moz-box;
@@ -670,12 +691,12 @@ header a{
 	padding-top: 20px;
 	padding-bottom: 0px;
 	bottom: 0px;
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,1));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,1));
 Safari 5.1 - 6.0 
-    background: -o-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.3), rgba(0,0,0,1));
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.1), rgba(0,0,0,1));
 Firefox 3.6 - 15 
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,1)); /* 标准的语法（必须放在最后） */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)); /* 标准的语法（必须放在最后） */
 	-webkit-border-bottom-right-radius: 20px;
 	-webkit-border-bottom-left-radius: 20px;
 	line-height: 100%;
@@ -780,10 +801,6 @@ Firefox 3.6 - 15
     float: left;
     margin-right: 0px;
 }
- .jiathis_style{
-	/* border: 1px dashed #F00;*/
-	padding-left:80%;
-	}
 form{
 	/*border: 1px dashed #F00;*/
 	/*width: 80%;*/	
