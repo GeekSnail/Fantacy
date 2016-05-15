@@ -22,9 +22,34 @@
 		  node.style.position='absolute';
 		  
       }
+	  var node=document.getElementById('backtop');
+      if(top>500){
+	  	  
+		  node.style.display='';
+		  node.style.color='rgba(0,0,0,0.6)';
+		  
+      }else{
+		  node.style.display='none';
+		 node.style.color='rgba(0,0,0,0)';
+		  
+      }
 	  
   }
-  
+/*   window.onscroll=function(){
+      var top=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+      var node=document.getElementById('backtop');
+      if(top>450){示
+	  	  
+		  node.style.display='';
+		  node.style.color='rgba(0,0,0,0.6)';
+		  
+      }else{
+		  node.style.display='none';
+		 node.style.color='rgba(0,0,0,0)';
+		  
+      }
+	  
+  }*/
 /*  
   $(document).ready(function() {
 

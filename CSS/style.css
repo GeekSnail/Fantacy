@@ -141,7 +141,8 @@ li {
 #nav1 ul li a:active {
   /*color: #fff;*/
   /*background-color: #787d82;*/
-  background-color: #787b00;
+  /*background-color: #787b00;*/
+  background-color: rgba(150,160,0,0.9);
   /*border-top: 1px solid #ddd;*/
   /*border-bottom: 1px solid #ddd;*/
   /*border: 1px solid #FFF;*/
@@ -1013,3 +1014,19 @@ input:focus {
 .qzone, .agree{
 	font-size: 14px;
 	}
+#backtop {
+	/*background-color: rgba(30,20,50,0.4);
+	color: #000 !important;*/
+	height: 27px;
+	width: 30px;
+	margin-top: 654px;
+	margin-left:auto;
+	position: fixed;
+	text-align: center;
+	vertical-align: middle;
+	padding-left: 88%;
+}
+#backtop li a {
+  color: rgba(0,0,0,0.5) !important;
+  position:fixed;
+}
