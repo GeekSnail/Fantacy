@@ -139,7 +139,7 @@ li {
   background-color: #787b00;
   /*border-top: 1px solid #ddd;*/
   /*border-bottom: 1px solid #ddd;*/
-  border: 1px solid #FFF;
+  /*border: 1px solid #FFF;*/
 }
 
 #login-area {
@@ -199,7 +199,7 @@ li {
 #login-area ul li a:hover,
 #login-area ul li a:active {
 	background-color: #788d22;
-	border: 1px solid #FFF;
+	/*border: 1px solid #FFF;*/
 }
 :link, :visited, ins {
     text-decoration: none; /*去掉链接的下划线*/
