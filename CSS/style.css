@@ -90,6 +90,7 @@ a{
 	min-width: 500px;
 	position:absolute;
 }
+
 #header{
 	margin-bottom: 5px;
 	background-color: rgba(0,0,0,1);
@@ -100,9 +101,12 @@ a{
 	min-width: auto;
 }
 #header a, #outer a{
-	color: #FFF;
+	color: #FFF ;
 	text-decoration: none;	
 }
+/*#outer.is-fixed a {
+    color: #404040;
+}*/
 #nav1{
 	height: 100%;
 	width: 60%; /*宽度右对齐,大小为container的70%*/
@@ -253,6 +257,16 @@ a, input, button {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+/*#nav #nav-back{
+	position:absolute !important;
+	height: inherit;
+	width: 100%;
+	text-align: center;
+	padding:300px 0;
+	color:#FFF;
+	font-size: 40px;
+	border: 1px dashed #00F;
+}*/
 /*#nav img{
 	width: 100%;
 }*/
@@ -316,8 +330,8 @@ article .postone{
 
 #footer {
 	height: auto;
-	width: 100% !important;
-    margin-top: 5px;
+	width: auto;
+    margin-top: 15px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #FFFFFF;
@@ -774,9 +788,9 @@ Firefox 3.6 - 15
 	line-height: 100%;
 }
 
-#container #item1, #container #item2 {
+#container #item1, #container #tag {
 	/*border: 1px dashed #00F;*/
-	width: 100%;
+	/*width: 100%;*/
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
@@ -1044,7 +1058,7 @@ input:focus {
 	position: fixed;
 	text-align: center;
 	vertical-align: middle;
-	padding-left: 88%;
+	padding-left: 90%;
 }
 #backtop li a {
   color: rgba(0,0,0,0.5) !important;
@@ -1052,7 +1066,7 @@ input:focus {
 }
 .social {
     overflow: hidden;
-    padding: 80px 0px 150px 0px;
+    padding: 50px 0px 150px 0px;
     height: 200px;
     /*background: rgba(0,0,0,0.5);*/
     background-position: center top;
@@ -1062,7 +1076,7 @@ input:focus {
 	/*font-size:40px;*/
 }
 #row {
-	padding-top: 80px;
+	padding-top: 70px;
 }
 
 .social #row a {
@@ -1076,8 +1090,9 @@ input:focus {
 	background: #FFFFFF;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 10px;
+	padding-top: 5px !important;
 	margin-bottom: 15px;
+	/*border: 1px solid #F36;*/
 }
 #RadioButtons1 {
 	/*padding-top: 0px;*/
