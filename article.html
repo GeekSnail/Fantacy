@@ -75,7 +75,7 @@
     <div id="nav" > 
     	<!--<img src="image/pcfs4banner.jpg" width="1440" height="517">--> <a name="nav"></a></div>
     <div id="container">
-  
+    <div id="post-container">
     
         <article class="postone" >
             <header><br>
@@ -136,8 +136,16 @@
 <script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
       </article>
-      <div id="tag" >
-      <h5><a href="tags.html">FEATURED TAGS</a></h5>
+      </div><!-- post-container END -->
+      
+      <div id="sidebar-container">
+                <!-- Featured Tags -->
+                
+                <section>
+  <div id="tag" class="col">
+     <div class="col-txt"> 
+     	<h5><a href="tags.html">FEATURED TAGS</a></h5>
+     </div>
       <div id="RadioButtons1">
         <input type="radio" name="RadioButtons1" id="Radio1">
         <label for="Radio1">node.js</label>
@@ -147,16 +155,72 @@
         <label for="Radio3">git</label>
       </div>
   </div>
-<div align="center" id="footer">
+                </section>
+                
+
+                <!-- Short About -->
+                <section>
+                  <div id="tag" class="col">
+                   <div class="col-txt"> 
+                    <h5><a href="about.html">ABOUT ME</a></h5>
+                     <div id="short-about">
+
+                        <img src="image/avatar.png" width="1013" height="1013">
+<p>我要成为魔法师!</p>
+                    </div>
+                   
+						</div>
+                    </div>
+                </section>
+                
+                <!-- Friends Blog -->
+                <section>
+                  <div id="tag" class="col">
+                   <div class="col-txt"> 
+                	<h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                        <li><a href="http://blog.kaijun.rocks">Kaijun's Blog</a></li>
+                    
+                        <li><a href="http://huangxuan.me">Hux Blog</a></li>
+                    
+                        <li><a href="#">Foo</a></li>
+                    
+                        <li><a href="#">Bar</a></li>
+                    
+                        <li><a href="#">Example Friends</a></li>
+                    
+                        <li><a href="#">It helps SEO</a></li>
+                    
+                </ul></div>
+                   </div>
+                </section>
+            </div>
+            
+<!--  <div id="tag" >
+      <h5><a href="tags.html">FEATURED TAGS</a></h5>
+      <div id="RadioButtons1">
+        <input type="radio" name="RadioButtons1" id="Radio1">
+        <label for="Radio1">node.js</label>
+        <input type="radio" name="RadioButtons1" id="Radio2">
+        <label for="Radio2">hexo</label>
+        <input type="radio" name="RadioButtons1" id="Radio3">
+        <label for="Radio3">git</label>
+      </div>
+  </div>-->
+
+</div>  
+ <!--id="container"-->
+ <div align="center" id="footer">
 <!--          <a href="http://www.youtube.com"><img src="image/yt.png" border="0" onMouseOver="this.src='image/yth.png'" onMouseOut="this.src='image/yt.png'" alt="youtube"/></a> -->
 	<section class="social" style="background-position-y: -788.667px;">
     <div id="row">
 	<!--<a href="https://www.facebook.com/geeksnail" class="social-icon" target="_blank" >&#xe604; </a>-->
     <a href="https://twitter.com/geeksnail" class="social-icon">&#xe61c;</a>
     <a href="https://plus.google.com/111564222830673965582" class="social-icon" target="_blank" data-reactid=".1j0uhvzj20w.2.1.1.2">&#xe607;</a>
+    <a href="https://github.com/GeekSnail/" class="social-icon" target="_blank">&#xe640;</a>
     <a href="https://weibo.com/geeksnail" class="social-icon" target="_blank">&#xe603;</a>
     <a href="https://www.douban.com/people/noelli/" class="social-icon" target="_blank">&#xe680;</a>
-     <a href="https://github.com/GeekSnail/" class="social-icon" target="_blank">&#xe640;</a>
      </div><br>
          <p class="copyright text-muted">
                     Copyright © Noelli's Blog 2016 
@@ -166,13 +230,9 @@
                     <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=geeksnail&amp;repo=fantacy&amp;type=star&amp;count=true">
       				</iframe>
      </p>
-     <!-- #BeginDate format:IS1 -->2016-05-20<!-- #EndDate -->
+     <!-- #BeginDate format:IS1 -->2016-05-23<!-- #EndDate -->
     </section>
 </div>
-</div>  
-
-  
- <!--id="container"-->
 </body>
 <script type="text/javascript">
 $(function() {

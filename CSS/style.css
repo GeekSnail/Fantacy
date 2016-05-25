@@ -11,7 +11,7 @@
 }
 
 .iconfont{
-    font-family:"iconfont" !important;
+    font-family:"iconfont" ;
     font-size:16px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
@@ -19,7 +19,7 @@
 	}
 body,html
 {
-	height:100%;
+	height:auto;
 	font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif,"iconfont";
 	font-size:16px;
 	color:#000;
@@ -28,6 +28,7 @@ body,html
 	background: #eee;
 	min-width:500px;
 	width: 100%;
+	/*border: 1px solid #F39;	*/
 }
 ul{
 	list-style: none;	
@@ -39,16 +40,24 @@ li {
 a{
 	color: #337ab7;
 }
-#container, #main {
-	height: auto;
-	width: 1200px;
-	margin-top: 15px;
+#container, #main, #footer, #register-container {
+	height: auto ;
+	width: 1175px !important;
+	margin-top: 5px;
 	margin-right: auto;
 	margin-bottom: 15px;
 	margin-left: auto;
 	padding:0px;
 	min-width: 400px;
 	/*border: 1px dashed #00F;*/
+}
+#register-container{
+	background-color:#FFF;
+}
+#container{
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
 }
 #main {
 	height: auto;
@@ -272,7 +281,7 @@ a, input, button {
 }*/
 #main #content {
 	width: 100%;
-	margin-top: 15px;
+	margin-top: 10px ;
 	margin-right: auto;
 	margin-bottom: 15px;
 	margin-left: auto;
@@ -329,12 +338,14 @@ article .postone{
 }
 
 #footer {
-	height: auto;
-	width: auto;
-    margin-top: 15px;
+	/*border: 1px dashed #090;*/
+	/*height: auto;*/
+	width: 100%;
+	margin-top: 15px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #FFFFFF;
+	margin-bottom: 0px;	
 	/*overflow:hidden;*/
 	/*text-align:center;*/
 /*	display:table;*/
@@ -426,17 +437,45 @@ header a{
 }
 .icon-menu{
 	background: #FFF;
-	/*border: 1px dashed #00F;*/
+	/*border: 1px dashed #C30;*/
 	}
 @media screen and (max-width: 720px){
-	#main #content{	
+	#main #content, #container{	
 	top: 10px;
 	display: table;
 	padding-bottom: 10px;
+	/*border: 1px dashed #00F;*/
 	}
-	#main{	 
-	width: auto;
+	#main, #container, #footer, #register-container{	 
+	width: auto !important;
+	/*margin-right: 500px !important;*/
 	}
+	#main #content{	 
+	/*width: 50% !important;*/
+		margin-right: 15px ;
+		margin-left: 15px ;
+		width:auto;
+	}
+	#content #right, #container #sidebar-container {
+	/*display: inherit;*/
+	margin-top: 10px;
+	margin-left: 15px;
+	/*margin-bottom: 0px;*/
+	margin-right: 15px;
+	padding:3px;
+	width: auto !important;
+	}/*右边的诗歌区块下移*/
+	#content #left, #container #post-container {
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+		width: auto !important;}/*左边的图像填满content*/
+	#container #post-container , #container #sidebar-container {
+		width: auto ;}
+	#container #post-container #item1 .status-item {
+		padding:0 0 0 0 !important;
+	}
+
 	#content #right {
 	/*display: inherit;*/
 	margin-top: 10px;
@@ -450,7 +489,7 @@ header a{
 		margin-top: 15px;
 		margin-left: 15px;
 		margin-right: 15px;
-		width: auto;}/*左边的图像填满content*/
+		width: auto;}/*左边的图像填满content*	
 	#nav1 .menu-ctrl {
     /*display: inline-block;*/
     /**display: inline;*/
@@ -478,12 +517,12 @@ header a{
  /* border-radius: 3px;
   cursor: pointer;
   transition: transform .2s ease;*/
-  }
+  
 .menu-ctrl:before, .menu-ctrl:after {
   border-radius: 3px;
   transition: transform .3s ease;
 }
-.menu-ctrl:before {
+.menu-ctrl, .menu-ctrl:before{
   content: '';
   display: block;
   position: absolute;
@@ -492,10 +531,24 @@ header a{
   top: -0.5em;
   background: #FFF;
 }
-
+.menu-ctrl {
+  top: 0.2em;
+}
+/*.menu-ctrl:after {
+  top: 0.5em;
+}*/
+/*.icon-menu:before {
+    content: '';
+  display: block;
+  position: absolute;
+  width: 5em;
+  height: 0.20em;
+   top: -0.5em;
+  background: #FFF;
+}*/
   #nav1 {
     position: relative;
-	width: 10%;
+	/*width: 10%;*/
 	margin-left: 2%;
   }
   #outer {
@@ -540,10 +593,16 @@ header a{
 #login-area .header-signin a, .header-signup a{
     width: 48px;
 	}  
-#container {
-	width: 100% !important;
-}
-
+ .status-item .bd .content{
+	padding-left: 5px !important;
+	padding-right: 10px !important;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	overflow: auto !important;	 /*border: 1px dashed #F00;*/
+	}
+	 .status-item .bd .content .desc{
+	overflow: auto !important;	
+	}
 }
 @media screen and (max-width:400px) {#right{font-size:16px;}
 #logo{
@@ -565,15 +624,33 @@ header a{
 	margin-left:13%;
 } 
 #nav1{
-	width: 25%;
+	width: 20%;
 } 
+#nav1 .menu-ctrl {
+	margin: 14%  auto;
+	/*margin-left: 12%;*/
+}
 #nav1 #top1 {
 	width: 100%;
 }
 /*.user_item{
 	 max-width: 70px;
 	}*/
-	
+	#main #content, #container #post-container,#container #sidebar-container {	 
+	/*width: 100% !important;*/
+	padding:0 0 0 0 !important;
+	margin:0 0 0 0 !important;
+	/*margin-right:0px !important;*/
+	/*border: 1px dashed #000; */
+	}	
+		#container #post-container #item1 .status-item .hd  {
+		margin-left: -8px !important;
+	}
+	#container #post-container #item1 .status-item .usr-pic img {
+		height:20% !important;
+		/*padding-left:15px !important;*/
+		margin-right: -8px !important;
+	}
 #nav {
 	height: 400px;
 }
@@ -634,7 +711,15 @@ header a{
 	margin-right: 5% !important;
 }
 }
-@media (min-width:720px) and (max-width:800px) {#right{font-size:8px;} 
+@media (min-width:720px) and (max-width:800px) {
+#content #right{
+	font-size:8px;
+	width: 30%;
+} 
+#content #left{
+	font-size:8px;
+	width: 70%;
+} 
 #nav1{
 	width: 50%;
 } #nav1 #top1 {
@@ -655,8 +740,8 @@ header a{
 #nav {
 	height: 520px;
 }  
-#container {
-	width: 90%;
+#main, #container, #footer, #register-container {
+	width: 700px !important;
 }
 #container #content #banner ul li img {
 	height: 320px !important;
@@ -672,8 +757,57 @@ header a{
  .status-item .bd .content{
 	padding-left: 15px !important;
 	}
+  .user_item{
+	  /*max-width: 100px;*/
+	  width: 30% !important;
+	  }
 }
-@media (min-width:800px) and (max-width:1024px) {#right{font-size:10px;} 
+@media screen and (max-width: 800px){
+	#container{	
+	top: 10px;
+	display: table;
+	padding-bottom: 10px;
+	}
+	 #container{	 
+	width: auto;
+	}
+	#container #post-container {
+	/*display: inherit;*/
+	margin-top: 0px !important;
+	}
+	#container #sidebar-container {
+	/*display: inherit;*/
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom:0px !important;
+	/*margin-bottom: 0px;*/
+	margin-right:15px;
+	padding:3px;
+	padding-bottom:0px !important;
+	width: auto;
+	}/*右边的诗歌区块下移*/
+	
+	#container #sidebar-container #short-about img {
+		display:none;
+	}
+	#container #post-container {
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+		width: auto;}/*左边的图像填满content*/
+	 #post-container {
+		
+		width: auto;}
+}
+@media (min-width:800px) and (max-width:1024px) {
+#content #right{
+	font-size:13px;
+	width: 40%;
+} 
+#content #left{
+	font-size:8px;
+	width: 60%;
+} 
 #nav1{
 	width: 60%;
 }
@@ -687,8 +821,11 @@ header a{
 #nav {
 	height: 700px;
 }
-#container {
-	width: 84%;
+#main, #container, #footer, #register-container {
+	width: 780px !important;
+}
+#container #sidebar-container {
+	width: 300px !important;
 }
 #container #content #banner ul li img {
 	height: 320px !important;
@@ -697,26 +834,48 @@ header a{
 	padding-left: 27px !important;
 	}
 }
-@media (min-width:1024px) and (max-width:1200px) {#right{font-size:14px;}
+@media (min-width:1024px) and (max-width:1200px) {#right{font-size:15px;}
 /*#login-area {
 	min-width: 16%;
 }*/
 #container #content #banner ul li img {
 	height: 320px !important;
 }
-#container, #main {
+#container, #main, #footer, #register-container {
 	height: auto;
-	width: 80%;
+	width: 1000px !important;
 	}
 }
-@media (min-width:1200px) and (max-width:1460px) {#right{font-size:16px;}}
-@media (min-width:1460px) and (max-width:1600px){#right{font-size:19px;}}
+@media (min-width:1200px) and (max-width:1600px){#right{font-size:19px;}}
 @media (min-width:1600px) and (max-width:1800px){#right{font-size:21px;}}
 @media (min-width:1800px) and (max-width:2000px){#right{font-size:24px;}}
+
+#post-container{
+	/*border: 1px dashed #00F;*/
+	width: auto !important;
+	-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	margin-right:15px;
+	/*float: left*/;
+}
+#sidebar-container {
+	/*border: 1px dashed #00F;*/
+	-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	width:400px;
+	 color: #aaaaaa;
+	/*float: left;*/
+}
+#sidebar-container a{
+	color: #404040 !important;
+}
 #container #content {
 	/*margin-top: 0px;*/
 	height: auto;
 	width: auto;
+	margin-top:10px;
 	/*border: 1px solid #903;*/
 	background-color: #FFF;
 }
@@ -791,7 +950,7 @@ Firefox 3.6 - 15
 #container #item1, #container #tag {
 	/*border: 1px dashed #00F;*/
 	/*width: 100%;*/
-	margin-top: 15px;
+	margin-top: 10px ;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
@@ -817,7 +976,7 @@ Firefox 3.6 - 15
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
 	/*border: 1px dashed #090;*/
-	/*padding-left: 30px;*/
+	padding-left: 20px;
 	width: auto;
 	height: 260px;
 	margin-right: 20px;
@@ -1088,22 +1247,49 @@ input:focus {
 }
 #tag{
 	background: #FFFFFF;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 5px !important;
+	padding-left: 10px;
+	padding-right: 10px !important;
+	padding-top: 5px  !important;
+	padding-bottom: 20px !important;
 	margin-bottom: 15px;
+	margin-top: 10px !important;
+	width: auto;
 	/*border: 1px solid #F36;*/
 }
 #RadioButtons1 {
+	/*border: 1px solid #F36;*/
 	/*padding-top: 0px;*/
-	padding-bottom: 30px;
-	padding-right: auto;
-	padding-left: auto;
-	text-align: center;
+	/*margin-top: -10px !important;*/
+	padding: 0 0 0 0;
+	width: auto;
+	padding-left: -10px !important;
+	text-align: left;
 	background-color: #FFFFFF;
 }
 :after, :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.col-txt {
+	/*border: 1px solid #F36;*/
+	padding-left: 7px ;	
+	padding-right: 7px ;
+}
+.col-txt ul.list-inline {
+	margin-top: -10px !important;
+	margin-left:-38px !important;	
+}
+#short-about {
+	width: auto !important;
+	/*border: 1px solid #F36;*/
+}
+#short-about img {
+	/*border: 1px solid #F36;*/
+	width: 100% ;
+	height: 1% !important;
+	/*margin-left: 5px !important;*/
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
 }

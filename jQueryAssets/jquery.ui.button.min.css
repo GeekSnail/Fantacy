@@ -52,6 +52,6 @@ input.ui-button{padding:.4em 1em}
 .ui-buttonset
 {padding-left:10%;padding-right:10% !important;}
 .ui-buttonset .ui-button
-{margin-left:.4em;margin-right:-.3em}/*设置各个标签按钮的左右边距*/
+{margin-left:.3em;margin-right:-.3em;margin-bottom:.5em }/*设置各个标签按钮的左右边距*/
 input.ui-button::-moz-focus-inner,button.ui-button::-moz-focus-inner
 {border:0;padding:0}
