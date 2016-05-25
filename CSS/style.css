@@ -618,6 +618,7 @@ header a{
 #nav1 #top1 {
 	width: 100%;
 }
+
 }
 @media screen and (max-width:640px) {#right{font-size:16px;}  
 
@@ -665,13 +666,19 @@ header a{
     width: 40px;
 	}
 #container #content #banner ul li img {
-	max-height: 290px;
+	/*max-height: 290px !important;*/
+	height:480px !important;
 }
 #container #content #banner ul {
-	margin-left: 5% !important;
+	/*margin-left: 5% !important;*/
+	margin: 10% !important;
 }
 #container #content #banner ul li {
-	margin-right: 4% !important;
+	/*margin-right: 5% !important;*/
+	margin-bottom: 10% !important;
+	height:480px !important;
+	/*height: 490px !important;*/
+	border: 1px dashed #000;
 }
   .user_item{
 	  /*max-width: 100px;*/
@@ -826,7 +833,7 @@ header a{
 	width: 780px !important;
 }
 #container #sidebar-container {
-	width: 300px !important;
+	width: 330px !important;
 }
 #container #content #banner ul li img {
 	height: 320px !important;
