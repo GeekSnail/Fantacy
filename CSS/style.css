@@ -613,7 +613,7 @@ header a{
 	width:20%;/*这个大小正好把字母包含进去*/
 }
 #header,#outer {
-	padding-left:20px;
+	padding-left:0px;
 }
 #nav1 #top1 {
 	width: 100%;
