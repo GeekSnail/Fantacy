@@ -11,7 +11,7 @@
    window.onscroll=function(){
       var top=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
       var node=document.getElementById('outer');
-      if(top>895){//20就是滚动条滚动到的位置，大于20才显示
+      if(top>745){//20就是滚动条滚动到的位置，大于20才显示
 	  	  
           node.style.background='rgba(0,0,0,0.7)';
 		  node.style.position='fixed';
