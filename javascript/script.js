@@ -15,13 +15,24 @@
 	  	  
           node.style.background='rgba(0,0,0,0.7)';
 		  node.style.position='fixed';
-		  node.a.style.color='red';
+		  node.style.color="red";
+		  node.style.zIndex=2010;//优先层叠，数字越大，越上方
 		  
       }else{
           node.style.background='rgba(0,0,0,0)';
 		  node.style.position='absolute';
 		  node.style.color='rgba(0,0,0,0.8)';
+		  node.style.zIndex=2010;
       }
+	 /* var node=document.getElementByClassName("textcolor");
+      if(top>745){
+	  	  
+		  node.style.color="red";
+		  
+      }else{
+		 node.style.color='rgba(0,0,0,0)';
+		  
+      }*/
 	/*  var node=document.getElementById('sidebar-container');
       if(top>895){//20就是滚动条滚动到的位置，大于20才显示
 		  node.style.position='fixed';
