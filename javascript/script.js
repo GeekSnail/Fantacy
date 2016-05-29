@@ -44,11 +44,13 @@
       if(top>500){
 	  	  
 		  node.style.display='';
-		  node.style.color='rgba(0,0,0,0.6)';
+		 /* node.style.color='rgba(0,0,0,0.6)';*/
+		  node.style.zIndex=2010;
 		  
       }else{
 		  node.style.display='none';
-		 node.style.color='rgba(0,0,0,0)';
+		 /*node.style.color='rgba(0,0,0,0)';*/
+		 node.style.zIndex=2010;
 		  
       }
 	  
