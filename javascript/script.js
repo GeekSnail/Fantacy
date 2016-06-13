@@ -105,6 +105,16 @@
       }*/
   }
   
+WB2.anyWhere(function(W){
+    W.widget.followButton({
+        'nick_name': '蛋糕店的夏天',  //用户昵称
+        'id': "wb_follow_btn",
+        'show_head' : true, //是否显示头像
+        'show_name' : true, //是否显示名称
+        'show_cancel': true //是否显示取消关注按钮
+    });
+});
+
   var flag = true,//状态true为正常的状态,false为放大的状态
            imgH,//图片的高度
            imgW,//图片的宽度
