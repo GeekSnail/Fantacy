@@ -16,14 +16,14 @@
           node.style.background='rgba(0,0,0,0.7)';
 		  node.style.position='fixed';
 		  node.style.height='30px';
-		  node.style.lineHeight='55%';
+		  node.style.lineHeight='45%';
 		  node.style.color="red";
 		  node.style.zIndex=2010;//优先层叠，数字越大，越上方
 		  
       }else{
           node.style.background='rgba(0,0,0,0)';
 		  node.style.position='absolute';
-		  node.style.lineHeight='100%';
+		  node.style.lineHeight='105%';
 		  node.style.color='rgba(0,0,0,0.8)';
 		  node.style.zIndex=2010;
       }
@@ -38,10 +38,10 @@
 	  var node=document.getElementById('login-area');
       if(top>745){//20就是滚动条滚动到的位置，大于20才显示
 	  	  lineHeight='20%';
-          node.style.margin="-10px auto auto auto";
+          node.style.margin="-9px auto auto auto";
 		  
       }else{
-		  node.style.margin="0px auto auto auto";
+		  node.style.margin="0px auto auto 5%";
       }
 	 /* var node=document.getElementByClassName("textcolor");
       if(top>745){
@@ -88,7 +88,7 @@
 	  	  
 		  node.style.position='fixed';
 		  node.style.display='';
-		  node.style.top='70px';
+		  node.style.top='68px';
 		  node.style.width='200px';
 		  
       }else{
