@@ -1155,6 +1155,9 @@ user agent stylesheetiframe {
 	 color: #aaaaaa;
 	/*float: left;*/
 }
+#container .sidebar-con{
+	width:400px !important;
+}
 #sidebar-container .col{
 	border: 1px solid #dddfc2;
 }
