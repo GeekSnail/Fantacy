@@ -99,7 +99,7 @@ a{
 #logo{
 	/*border: 1px dashed #00F;*/
 	margin-left: 12%;
-	min-width: 208px;
+	min-width: 210px;
 	}
 #outer {
 	/*position: fixed;*/
@@ -107,8 +107,13 @@ a{
 	/*background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.7));*/
 	min-width: 450px;
 	position:absolute;
+	line-height:120%;
 }
-
+.outerfixed {
+      /*-webkit-box-shadow:0 10px 10px rgba(0, 204, 204, .5);  
+  -moz-box-shadow:0 10px 10px rgba(0, 204, 204, .5);  
+  box-shadow:0 10px 10px rgba(0, 204, 204, .5); */ 
+}
 #header{
 	margin-bottom: 5px;
 	background-color: rgba(0,0,0,1);
@@ -122,9 +127,9 @@ a{
 	color: #FFF ;
 	text-decoration: none;	
 }
-/*#outer.is-fixed a {
-    color: #404040;
-}*/
+#outer.is-fixed a {
+    color: #404040;/**/
+}
 #nav1{
 	height: 100%;
 	width: 60%; /*宽度右对齐,大小为container的70%*/
@@ -168,7 +173,7 @@ a{
 }
 
 #nav1 a {
-    color: #eee; /*超链接文本颜色*/
+    /*color: #eee;*/ /*超链接文本颜色*/
     font-size: 20px;
     line-height: 45px; /*一行字符的高度*/
     /*display: inline-block;*/
@@ -182,6 +187,21 @@ a{
 	transition: background-color 0.3s;
     display: block; /*超链接区域扩大到（填满）整个li*/
 	transition: all 0.5s; 
+}
+#nav1 .navcol, #outer .navcol, #header .navcol{
+	color:#666; 
+	transition: all 0.3s;
+}
+#nav1 .navcol:hover, #nav1 .navcol:active,
+#login-area ul li .navcol:hover, #login-area ul li .navcol:active{
+	color:#FFF; 
+	background-color: rgba(165,180,0,0.75);
+}
+#login-area ul li .navcol:hover, #login-area ul li .navcol:active{
+	 background-color: rgba(160,170,0,0.8);
+}
+.menu-icon, .menu-icon:before{
+	background-color: #666 !important;
 }
 #nav1 ul li a:hover,
 #nav1 ul li a:active {
@@ -503,6 +523,9 @@ header a{
 	width: auto !important;
 	/*margin-right: 500px !important;*/
 	}
+	#main, #container{	 
+	width: 100% !important;
+	}
 	#main #content{	 
 	/*width: 50% !important;*/
 		margin-right: 15px ;
@@ -583,7 +606,8 @@ header a{
   border-radius: 3px;
   transition: transform .3s ease;
 }
-.menu-ctrl, .menu-ctrl:before{
+.menu-ctrl, .menu-ctrl:before,
+.menu-icon, .menu-icon:before{
   content: '';
   display: block;
   position: absolute;
@@ -594,6 +618,13 @@ header a{
 }
 .menu-ctrl {
   top: 0.2em;
+}
+.menu-icon, .menu-icon:before{
+	/*border: 1px dashed #F00;*/
+	top: -0.2em;
+	margin-top:0.7em;
+
+  background: #666;
 }
 /*.menu-ctrl:after {
   top: 0.5em;
@@ -628,11 +659,17 @@ header a{
     position: absolute;
     left: 0px;
     top: 60%; /*相对nav1的垂直位置*/
-	margin: 10px 0 0 0;
+	margin: 12.9px 0 0 0;
 	padding: 0%;
 	border-radius: 4px !important;
-    background-color: #222919;
-	/*background-color: #222428;*/
+    /*background-color: rgba(70,80,20,0.9);*/
+	background-color: rgba(100,120,30,0.5);
+	border: 1px solid rgba(150,160,0,0.9); 
+	box-shadow:0px 1px 6px rgba(200,200,200,0.8);  
+  }
+  #nav1 .top1fixed {
+	background-color: rgba(255,255,255,0.9) !important;
+	box-shadow:0px 1px 8px rgba(200,200,200,0.8);  
   }
   #nav1 #top1 li {
     float: none;
@@ -640,6 +677,7 @@ header a{
     width: 100%; /*每个li区块的宽度*/
   }
   #nav1 #top1 li a {
+	  
     text-align: center;
 	border-radius: 4px !important;
   }
@@ -700,9 +738,9 @@ header a{
 	width: 20%;border:
 	padding-top:5px;
 }
-#nav1 .menu-ctrl {
+#nav1 .menu-ctrl, #nav1 .menu-icon {
 	/*margin: 14%  auto;*/
-	margin: 18px 33% auto auto
+	margin: 20px 33% auto auto;
 	/*margin-left: 12%;*/
 }
 #nav1 #top1 {
@@ -743,9 +781,9 @@ header a{
 		/*padding-left:15px !important;*/
 		margin-right: -8px !important;
 	}
-	.content-wrap {
+	#post-container .content-wrap {
 	
-    padding-right: 0px;
+    padding-left:16%;
 }
 	.posts-collapse {
 	width: 327px !important;
@@ -765,6 +803,7 @@ header a{
   }
  #login-area .header-signin a, .header-signup a{
     width: 40px;
+	margin-top:5px;
 	}
 #container #content #banner ul li img {
 	/*max-height: 290px !important;*/
@@ -834,7 +873,7 @@ padding-bottom:20px;
 #nav1 #top1 {
 	width: 100%;
 }
-#nav1 .menu-ctrl {
+#nav1 .menu-ctrl,#nav1 .menu-icon {
 	margin: 10%  auto;
 }
 #nav {
@@ -845,6 +884,7 @@ padding-bottom:20px;
 }
 #login-area ul {
 	margin-left: -35px;
+	margin-top: -2.5px;
 }
 #login-area .header-signin a, .header-signup a{
     width: 45px;
@@ -1006,14 +1046,27 @@ padding-bottom:20px;
 #main, #container, #footer, #register-container {
 	width: 780px !important;
 }
+#main .postcontainer{
+	width:590px !important;	
+}
+#container .content-wrap {
+    width: 485px;
+}
+#content-a{
+		
+}
 .posts-collapse {
-	width: 450px !important;
+	width: 90% !important;
+	margin-left: 30px !important;
 }
 #container #sidebar-container {
-	width: 340px !important;
+	/*width: 220px !important;*/
+}
+#container .sidebar {
+	width: 220px !important;
 }
 	#container #sidebar-container #sidebar-fix{
-		width: 170px !important;
+		width: 200px !important;
 	}
 	#wb_follow_btn{
 	width:61px;
@@ -1042,6 +1095,9 @@ padding-bottom:20px;
 #container, #main, #footer, #register-container {
 	height: auto;
 	width: 1000px !important;
+	}
+#container .content-wrap{
+	width:692px;
 	}
 }
 @media (min-width:1200px) and (max-width:1600px){#right{font-size:20px;}}
@@ -1094,7 +1150,7 @@ user agent stylesheetiframe {
 	-box-flex: 1;
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
-	width:400px;
+	width:300px;
 	margin-top:-10px;
 	 color: #aaaaaa;
 	/*float: left;*/
@@ -1561,7 +1617,7 @@ input:focus {
     /*float: left;*/
     /*box-sizing: border-box;*/
 	position: inherit;
-    padding: 60px;
+    padding: 60px 0 60px 60px;
 	margin-top:10px;
     /*width: 680px;*/
     /*background: #fff;*/
