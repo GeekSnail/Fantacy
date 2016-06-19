@@ -136,7 +136,7 @@
 		  node.style.position='fixed';
 		  node.style.display='';
 		  node.style.top='68px';
-		  node.style.width='200px';
+		  node.style.width='220px';
 		  
       }else{
 		  node.style.position='static';
