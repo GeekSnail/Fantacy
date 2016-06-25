@@ -11,43 +11,54 @@
    window.onscroll=function(){
       var top=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
       var node=document.getElementById('outer');
-      if(top>740){//20就是滚动条滚动到的位置，大于20才显示
+      if(top>540){//20就是滚动条滚动到的位置，大于20才显示
 	  	  node.className="outerfixed";
           node.style.background='rgba(255,255,255,0.9)';
 		  node.style.position='fixed';
-		  node.style.height='30px';
-		  node.style.lineHeight='70%';
+		  node.style.padding='15px 0px 15px 30px';
+		  node.style.height='60px';
+		  node.style.lineHeight='80%';
 		  node.style.color="red";
 		  node.style.zIndex=2010;//优先层叠，数字越大，越上方
-		  node.style.boxShadow='0 0 13px rgba(200,200,200,0.8)';
+		  node.style.boxShadow='0 0 8px rgba(200,200,200,0.8)';
+		  node.style.boxsizing="content-box";
       }else{
+		  node.style.boxsizing="border-box";
 		  node.className="";
           node.style.background='rgba(0,0,0,0)';
 		  node.style.position='absolute';
+		  node.style.padding='30px 0px 30px 40px';
 		  node.style.lineHeight='100%';
 		  node.style.color='rgba(0,0,0,0.8)';
 		  node.style.zIndex=2010;
 		  node.style.boxShadow='';
       }
-	  var node=document.getElementById('nav1');
-      if(top>740){//20就是滚动条滚动到的位置，大于20才显示
-	  	  lineHeight='20%';
-          node.style.margin="-10px auto auto auto";
+	  var node=document.getElementById('logo');
+      if(top>540){//20就是滚动条滚动到的位置，大于20才显示
+	  	  
 		  
       }else{
-		  node.style.margin="-4px auto auto auto";
+		  
+      }
+	  var node=document.getElementById('nav1');
+      if(top>540){//20就是滚动条滚动到的位置，大于20才显示
+	  	  lineHeight='20%';
+          node.style.margin="-6px 0 0 auto";
+		  
+      }else{
+		  node.style.margin="-4px 0px 0px auto";
       }
 	  var node=document.getElementById('login-area');
-      if(top>740){//20就是滚动条滚动到的位置，大于20才显示
+      if(top>540){//20就是滚动条滚动到的位置，大于20才显示
 	  	  /*lineHeight='20%';*/
-          node.style.margin="-10px auto auto auto";
+          node.style.margin="-6px 0px auto 0px";
 		  
       }else{
-		  node.style.margin="-5px auto auto 5%";
+		  node.style.margin="-5px 0px auto 0px";
       }
 	  
 	  var lab = document.getElementsByTagName("a");//获取超链接对象数组
-      if(top>740){
+      if(top>540){
 	  	  
 /*		   for(var i=1;i<9;i++)  
  			{
@@ -86,7 +97,7 @@
 			 lab[2].className="menu-ctrl";
       }
 	  var top1fix = document.getElementsByTagName("ul");//获取超链接对象数组
-      if(top>740){
+      if(top>540){
 		  top1fix[0].className="top1fixed"; 
 		}else {
 			top1fix[0].className="";
@@ -107,7 +118,7 @@
 		  node.style.position='';
       }*/
 	  var node=document.getElementById('backtop');
-      if(top>500){
+      if(top>400){
 	  	  
 		  node.style.display='';
 		 /* node.style.color='rgba(0,0,0,0.6)';*/
@@ -121,7 +132,7 @@
       }
 	  
 	  var node=document.getElementById('sidebar-container');
-      if(top>745){
+      if(top>545){
 	  	  
 		  node.style.position='relative';
 		  node.style.display='';
@@ -131,17 +142,19 @@
 		  
       }
 	  var node=document.getElementById('sidebar-fix');
-      if(top>875){
+      if(top>648){
 	  	  
 		  node.style.position='fixed';
 		  node.style.display='';
-		  node.style.top='68px';
-		  node.style.width='220px';
+		  node.style.top='76px';
+		  node.style.width='200px';
 		  
       }else{
 		  node.style.position='static';
 		  
+		  
       }
+	 	
 /*	  var node=document.getElementByID('tag');
       if(top>950){
 	  	  node.style.width='200px';
@@ -151,8 +164,21 @@
 		  
       }*/
   }
-  
-WB2.anyWhere(function(W){
+  		var x = navigator;
+		var w=window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
+		/*var h=window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight;*/
+		if(screen.width<640){
+	    	document.getElementByTagName('h1')[0].innerHTML = "<h1>Yixiangren</h1>";
+		}
+		else{
+			document.getElementByTagName('h1')[0].innerHTML = "<h1>Yixiangren'note</h1>";
+		}
+		
+/*WB2.anyWhere(function(W){
     W.widget.followButton({
         'nick_name': '蛋糕店的夏天',  //用户昵称
         'id': "wb_follow_btn",
@@ -160,9 +186,9 @@ WB2.anyWhere(function(W){
         'show_name' : true, //是否显示名称
         'show_cancel': true //是否显示取消关注按钮
     });
-});
+});*/
 
-  var flag = true,//状态true为正常的状态,false为放大的状态
+/*  var flag = true,//状态true为正常的状态,false为放大的状态
            imgH,//图片的高度
            imgW,//图片的宽度
            img = document.getElementsByClassName('enlarge')[0];//图片元素
@@ -181,7 +207,7 @@ WB2.anyWhere(function(W){
            img.height = imgH/2;
            img.width = imgW/2;
        }
-  }
+  }*/
   
   
  

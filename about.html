@@ -8,7 +8,7 @@
   <meta property="wb:webmaster" content="6f5ff67c34ad665f" />
   <title>关于 | Noelli's life</title>
   <link href="CSS/style.css" rel="stylesheet" type="text/css">
-  <!--<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">-->
+  <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
   <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
   <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
@@ -28,13 +28,13 @@
   
   <body>
     <div id="backtop">
-   		<div id="backnav">
-    		<a href="#nav">back</a>
-    	</div> 
+   		<a href="#nav">
+            <div id="backnav">back</div> 
+        </a> 
     </div>
   <div id="outer">
   		<div id="logo">
-    		<a href="http://noelli.cn" target="_blank">Noelli's life</a>
+    		<a href="http://noelli.cn" target="_blank">Yixiangren</a>
     	</div> 
   	     	<div id="nav1">  
         	<a href="#" class="menu-ctrl">
@@ -86,8 +86,14 @@
         </div> 
   </div>-->
   <div id="nav" > 
-    	<!--<img src="image/pcfs4banner.jpg" width="1440" height="517">-->   
-        </div>
+    	<div id="nav-back">
+            <div id="nav-con" class="col-lg-offset-2 col-lg-8">
+            	<div id="nav-intro"  > 
+                	<a href="#main"><h1>Yixiangren's Blog</h1></a>
+        		</div>
+            </div>
+        </div>  
+  </div>
   <div id="main">
 	        <article class="about-me">
             <header><br>
@@ -97,7 +103,7 @@
                 <span>Posted on May 26, 2016.</span>
                   <div class="excerpt"><br>
                       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=202373&auto=0&height=66"></iframe>
-                      <p>距离第一次学习搭建个人静态博客已经过去4个月了，对框架的概念还不是很清楚。例如：<br> ①&nbsp;config.yml文件只能在建立框架的时候才能有吗？<br> ②&nbsp;未使用框架的静态博客要如何Rewrite域名，才能使url末尾可以自定义？形如：<!-- #BeginDate format:IS1 -->2016-06-19<!-- #EndDate -->3<!-- #EndDate -->/。</p>
+                      <p>距离第一次学习搭建个人静态博客已经过去4个月了，对框架的概念还不是很清楚。例如：<br> ①&nbsp;config.yml文件只能在建立框架的时候才能有吗？<br> ②&nbsp;未使用框架的静态博客要如何Rewrite域名，才能使url末尾可以自定义？形如：<!-- #BeginDate format:IS1 -->2016-06-26<!-- #EndDate -->3<!-- #EndDate -->/。</p>
                      <p>不过终于可以在自己的博客上写点东西啦，好像有了归属感。（附一张去年夏天在老家拍的海…&rarr;_&rarr;…）</p>
                       <br>
                   </div>

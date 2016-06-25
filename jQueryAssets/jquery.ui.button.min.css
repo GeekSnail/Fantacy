@@ -30,7 +30,7 @@ button.ui-button-icons-only
 {display:block;
 line-height:normal}
 .ui-button-text-only .ui-button-text
-{padding:.4em 1em}
+{padding:.2em .9em}
 .ui-button-icon-only .ui-button-text,.ui-button-icons-only .ui-button-text
 {padding:.4em;
 text-indent:-9999999px}

@@ -9,28 +9,26 @@
   <meta property="wb:webmaster" content="6f5ff67c34ad665f" />
 <title>关于南昌的记忆 | Noelli's life</title>
 <link href="../CSS/style.css" rel="stylesheet" type="text/css">
-<!--  <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">-->
-
-<!--<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<link href="../CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
 
   <link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
   <link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
   <link href="../jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
   
 <script type="text/javascript" src="../javascript/script.js"></script>
-  <script src="../jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
-  <script src="../jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
-  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+  
+
 
 </head>
 
 <body>
 	<div id="backtop">
-   		<div id="backnav">
-    		<a href="#nav">back</a>
-    	</div> 
+   		<a href="#nav">
+            <div id="backnav">back</div> 
+        </a> 
     </div>
-	<div id="outer" class="navbar-custom" >
+	<div id="outer"  >
     	<div id="logo">
     		<a href="http://noelli.cn" target="_blank">Noelli's life</a>
     	</div> 
@@ -65,7 +63,7 @@
 <div id="main">       
 <div id="container">
   
-<div id="post-container">
+<div id="post-container" class="posts">
 	        <article class="postone" >
             <header><br>
                 <h2>忆</h2>
@@ -129,7 +127,7 @@ var duoshuoQuery = {short_name:"geeksnail"};
 	</article>
       </div><!-- post-container END -->
       
-      <div id="sidebar-container" style="width: 39px;">
+      <div id="sidebar-container" class="sidebar-arch" >
       
                 <!-- Featured Tags -->
                 
@@ -156,12 +154,15 @@ var duoshuoQuery = {short_name:"geeksnail"};
                   <div id="tag" class="col">
                    <div class="col-txt"> 
                     <h5><a href="../about.html">ABOUT ME</a>
-                    <div id="wb_follow_btn" ><wb:follow-button uid="3210387355" type="gray_2" width="67" height="24" ></wb:follow-button></div>
+                    <div id="wb_follow_btn" ><wb:follow-button uid="3210387355" type="gray_2" width="63" height="24" ></wb:follow-button></div>
                     </h5>
                      <div id="short-about">
 
                         <img src="../image/avatar.png" width="1013" height="1013">
-<p>我要成为魔法师!</p>
+						<p class="site-author-name" itemprop="name">Noelli</p>
+						<p class="site-description" itemprop="name">
+                        我要成为魔法师!<br>
+                        what if I can do it?</p>
                     </div>
                    
 						</div>
@@ -239,8 +240,10 @@ var duoshuoQuery = {short_name:"geeksnail"};
     </section>
 </div>
 
- 
-
+<script src="../javascript/bootstrap.js" type="text/javascript"></script> 
+<script src="../jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="../jQueryAssets/jquery.ui-1.10.4.button.min.js" type="text/javascript"></script>
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </body>
 <script type="text/javascript">
 $(function() {
