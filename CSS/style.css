@@ -781,7 +781,7 @@ header a{
     padding-left:10px !important;
 }
 #nav #nav-intro {
-    padding: 140px 0 !important;
+    padding: 150px 0 !important;
 }
 #nav #nav-intro {
     margin-left: 10%;
@@ -792,6 +792,7 @@ header a{
 }
 #logo{
 	margin-right: 10px;
+	margin-top: -4px;
 }
 #nav1{
 	width: 20%;
