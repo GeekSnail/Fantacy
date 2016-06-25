@@ -326,9 +326,9 @@ a, input, button {
 }
 #nav #nav-intro {
 	padding:240px 0;
-	margin-left:20%;
+	margin-left:23%;
 	
-	width:60%;
+	width:54%;
 	height:20%;
 	text-align: center;
 	z-index:1;
@@ -1197,6 +1197,8 @@ padding-bottom:20px;
 }
 #nav #nav-intro {
     padding: 210px 0;
+    margin-left: 26%;
+    width: 48%;
 }
 #container #content #banner ul li img {
 	height: 320px !important;
