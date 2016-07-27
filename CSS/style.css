@@ -1069,7 +1069,7 @@ padding-bottom:20px;
 	width: 700px !important;
 }
 	.posts-collapse {
-	width: px !important;
+	width: 500px !important;
 	margin-right: 40px !important;
 }
 #content #right, #container #sidebar-container{
@@ -1144,6 +1144,9 @@ padding-bottom:20px;
 	#container #sidebar-container #sidebar-fix{
 		position:static !important;
 		width: 100% !important;
+	}
+	#container .sidebar-arch {
+		max-width: auto !important;
 	}
 	#wb_follow_btn {
     margin-right:6%;
@@ -1278,7 +1281,10 @@ padding-bottom:20px;
 	width: 960px !important;
 	}
 #container .content-wrap{
-	width:692px;
+	width:800px;
+	}
+	.posts-collapse {
+    width: 70% !important;
 	}
 }
 @media (min-width:1200px) and (max-width:2000px){#right{font-size:17px;}}
@@ -1333,7 +1339,7 @@ user agent stylesheetiframe {
 	-box-flex: 1;
 	-moz-box-flex: 1;
 	-webkit-box-flex: 1;
-	width:380px;
+	width:400px;
 	min-width:200px !important;
 	/*margin-top:-10px;*/
 	 color: #aaaaaa;
@@ -1346,7 +1352,7 @@ user agent stylesheetiframe {
 #container .sidebar-arch {
     width: 220px !important;
     min-width: 200px;
-	max-width: 220px !important;
+	/*max-width: 220px !important;*/
 }
 #sidebar-container .col{
 	/*border: 1px solid #dddfc2;*/
@@ -1774,6 +1780,7 @@ input:focus {
 	/*padding-top: 0px;*/
 	/*margin-top: -10px !important;*/
 	padding: 0 0 0 0;
+	    margin-bottom: 20px;
 	width: auto;
 	padding-left: -10px !important;
 	text-align: left;
@@ -2106,7 +2113,7 @@ input:focus {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    z-index: 2012;
+    z-index: 2011;
 	opacity: 0;
 }
 .tiles article > a h2 {

@@ -19,7 +19,7 @@
 		  node.style.height='60px';
 		  node.style.lineHeight='80%';
 		  node.style.color="red";
-		  node.style.zIndex=2010;//优先层叠，数字越大，越上方
+		  node.style.zIndex=2016;//优先层叠，数字越大，越上方
 		  node.style.boxShadow='0 0 8px rgba(200,200,200,0.8)';
 		  node.style.boxsizing="content-box";
       }else{
@@ -30,7 +30,7 @@
 		  node.style.padding='30px 0px 30px 40px';
 		  node.style.lineHeight='100%';
 		  node.style.color='rgba(0,0,0,0.8)';
-		  node.style.zIndex=2010;
+		  node.style.zIndex=2016;
 		  node.style.boxShadow='';
       }
 	  var node=document.getElementById('logo');
